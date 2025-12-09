@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: Arial;
+  margin: 20px;
+}
+
+#movieList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#details {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid black;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <input id="Buscador" type="text" placeholder="Digite o nome do filme...">
+    <button id="Buscar">Buscar</button>
+
+    <select id="filtrotipo">
+        <option value="">filtrar por tipo</option>
+        <option value="all">todos</option>
+        <option value="movie">filmes</option>
+        <option value="series">series</option>
+        <option value="game">games</option>
+    </select>
+    <select id="sortbotao">
+        <option value="">ordernar</option>
+        <option value="ano">Ano (recente→antigo)</option>
+      <option value="titulo">Título (A→Z)</option>
+    </select>
+    </header>
+    <div id="stats"></div>
+
+  <div id="movieList"></div>
+
+  <div id="details"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
